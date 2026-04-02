@@ -1,0 +1,22 @@
+table{
+    border-spacing: none ;
+    border-collapse: collapse;
+}
+
+td, 
+th,
+thead,
+caption{
+    border: 1px solid #000;
+}
+
+caption{
+    font-weight: 800;
+    border-bottom: 0;
+}
+
+.table{
+    color: red;
+}
+
+
