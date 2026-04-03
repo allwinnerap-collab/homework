@@ -1,0 +1,48 @@
+body{
+    border-width: 10px;
+    border-color: black;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 200px;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button{
+    padding-bottom: 5px;
+}
+
+fieldset{
+    border: none;
+    display: inline;
+}
+
+.checkbox{
+    cursor: pointer;
+    max-height: 20px;
+}
+
+form{
+    width: 200px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 7px;
+}
+
+span{
+    padding: 10px;
+}
+
+input{
+    border-radius: 5px;
+    width: auto;
+}
+
+
+
