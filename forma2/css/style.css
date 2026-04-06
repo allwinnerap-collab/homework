@@ -1,0 +1,136 @@
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 10px;
+    border-color: black;
+    min-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.form{
+    border: 1px solid #000;
+    border-radius: 6px;
+    max-width: 500px;
+    padding: 30px;
+    width: 100%;
+}
+
+.form-group{
+    max-width: 400px;
+    max-height: 350px;
+    border: none;
+    padding: 0;
+}
+
+.form-group-title{
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 30px;
+}
+
+.input,
+.textarea{
+    min-width: 250px;
+    padding: 5px 7px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-radius: 7px;
+    width: 100%;
+}
+
+.checkbox-label{
+    padding-left: 22px;
+
+}
+
+.checkbox{
+    appearance: none;
+    position: absolute;
+    outline: none;
+}
+
+.checkbox::after{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin-left: -22px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.checkbox:checked::after{
+    background: url(../image/check-icon.svg) no-repeat center, #9e1fff;
+}
+
+
+
+.button{
+    border: none;
+    border-radius: 4px;
+    padding: 6px 18px;
+    background-color: #9e1fff;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.2s;
+}
+
+.button:hover{
+    opacity: 0.85;
+}
+
+.button:active{
+    background-color: #2e044e;
+}
+
+.input:focus-visible {
+    outline: 2px solid #9e1fff ;
+    outline-offset: 1px;
+}
+
+.textarea:focus-visible {
+    outline: 2px solid #9e1fff ;
+    outline-offset: 1px;
+}
+
+button:disabled,
+.checkbox:disabled::after{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.button:focus-visible{
+    outline: 2px solid #9e1fff ;
+    outline-offset: 1px;
+}
+
+.checkbox:focus-visible::after{
+    outline: 2px solid #9e1fff ;
+    outline-offset: 1px;
+}
+
+
+
+
+
+
+
+
+
