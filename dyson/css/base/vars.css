@@ -1,0 +1,10 @@
+:root{
+    --font-family: "OpenSans", sans-serif;
+    --font-second-family: "NAMU-Pro", sans-serif;
+
+    --transition-time: 0.2s;
+
+    --layer-1: 1;
+    --layer-2: 2;
+    --layer-3: 3;
+}
