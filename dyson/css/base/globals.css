@@ -1,7 +1,7 @@
 .page {
     font-family: var(--font-family), var(--font-second-family);
     font-weight: 400;
-    color: #111111;
+    color: #111;
 }
 
 .page__body{
@@ -12,6 +12,9 @@
 .container{
     max-width: 1360px;
     margin-inline: auto;
+    color: #111;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 @media (width <= 768px) {

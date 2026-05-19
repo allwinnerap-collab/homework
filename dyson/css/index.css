@@ -5,3 +5,14 @@
 
 @import "./blocks/header.css";
 @import "./blocks/menu.css";
+@import "./blocks/hero.css";
+@import "./blocks/cards.css";
+@import "./blocks/experts.css";
+@import "./blocks/why.css";
+@import "./blocks/offers.css";
+@import "./blocks/reviews.css";
+@import "./blocks/about.css";
+@import "./blocks/FAQ.css";
+@import "./blocks/news.css";
+@import "./blocks/contact-us.css";
+@import "./blocks/footer.css";
