@@ -1,0 +1,133 @@
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal[hidden] {
+    display: none;
+}
+
+.modal__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    animation: fadeIn 0.25s ease;
+}
+
+.modal__content {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px 35px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.3s ease;
+}
+
+.modal__close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    line-height: 1;
+    color: #909090;
+    cursor: pointer;
+    transition: color var(--transition-time);
+}
+
+.modal__close:hover {
+    color: #c5358c;
+}
+
+.modal__title {
+    font-family: var(--font-second-family);
+    font-weight: 600;
+    font-size: 26px;
+    color: #111;
+    margin: 0 0 25px;
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.modal__field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.modal__label {
+    font-family: var(--font-family);
+    font-size: 14px;
+    color: #555;
+}
+
+.modal__input {
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: #111;
+    padding: 12px 14px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color var(--transition-time);
+}
+
+.modal__input:focus {
+    border-color: #c5358c;
+}
+
+.modal__textarea {
+    resize: vertical;
+    min-height: 100px;
+    font-family: var(--font-family);
+}
+
+.modal__submit {
+    margin-top: 10px;
+    padding: 14px 30px;
+    background: #c5358c;
+    color: #fff;
+    font-family: var(--font-family);
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color var(--transition-time);
+}
+
+.modal__submit:hover {
+    background: #a82978;
+}
+
+/* Блокируем скролл фоновой страницы */
+body.modal-open {
+    overflow: hidden;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
