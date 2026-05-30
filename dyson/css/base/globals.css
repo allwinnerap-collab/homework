@@ -1,0 +1,29 @@
+.page {
+    font-family: var(--font-family), var(--font-second-family);
+    font-weight: 400;
+    color: #111;
+}
+
+.page__body{
+    background-color: #ECECEC;
+}
+
+.container{
+    max-width: 1360px;
+    margin-inline: auto;
+    color: #111;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (width <= 768px) {
+    .container{
+        max-width: 627px;
+    }
+}
+
+
+a:focus-visible,
+button:focus-visible{
+    outline: 1px solid #C5358C;
+}
